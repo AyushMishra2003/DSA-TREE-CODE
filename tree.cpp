@@ -34,6 +34,16 @@ public:
         }
         return(root);
     }
+
+    void Inorder(Node *root)
+    {
+        if(root)
+        {
+            Inorder(root->left);
+            cout<<root->data<<" ";
+            Inorder(root->right);
+        }
+    }
 };
 int main()
 {
